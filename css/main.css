@@ -45,10 +45,10 @@ header nav ul li a{color: rgb(61, 61, 61); padding-right: 30px; font-family: 'M 
                background-position: center; background-size: cover;}
 .section_event .event_go{width: 1100px; height: 300px; margin: 0 auto; position: relative;}
 
-.section_event .event_go .textbox_2{width: 50%; height: 80px; padding: 200px 0;
-                          background-color: white;
+.section_event .event_go .textbox_2{width: 50%; height: 300px; padding: 20px 0;
+                          background-color: white; position: absolute; top: 600px; left: 300px;
                           display: flex; flex-direction: column; justify-content: space-evenly;
-                          position: absolute; top: 600px; left: 300px;}
+                          align-items: center;}
 .section_event .p11{font-size: 25px; 
     color: #444; font-family: 'Pretendard-Regular'; }
 .section_event .p22 a{padding: 20px 30px; border: 1px solid #333;
