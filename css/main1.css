@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+#wrap{width: 100%; height: auto; margin: 0 auto; }
+header{width: 100%; height: 70px; background-color: rgba(255, 255, 255, 0.11); 
+margin: 0 auto; position: absolute; z-index: 3; }
+.container{width: 1100px; margin: 0 auto; padding-top: 20px;
+display: flex; justify-content: space-between; align-items: center;}
+.container .logo{background-image: url("../img/img-nexus-logo.png"); background-position: center; background-size: cover;
+        width:200px; height: 50px; }
+header nav ul{display: flex; justify-content: space-evenly;}
+header nav ul li a{color: rgb(61, 61, 61); padding-right: 30px; font-family: 'M PLUS 1', sans-serif;}
+
+#slidewrap{width: 100%; height: 600px; position: relative; overflow: hidden; }
+.slide {width: 300vw; }
+.slide li {width: 100vw; height: 600px; float: left;}
+.slide li img {width: 100%; height: 100%;}
+span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 25px;
+background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }
+
+span:hover {background: rgba(255,255,255,0.8); color:#000;}
+.prev {left:0; border-radius: 0 10px 10px 0px; padding:10px;}
+.next {right:0; border-radius: 10px 0px 0px 10px; padding:10px;}
+
+
+.section_story{width: 1100px; height: 550px;  margin: 0 auto ; background-color: white;
+display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;}
+.section_story .textbox{width: 50%; height: 400px; display: flex; flex-direction: column; 
+        justify-content: space-around; align-items: flex-start;}
+.section_story .textbox h3{font-family: 'M PLUS 1', sans-serif;}
+.section_story .p1{font-size: 25px; line-height: 40px;
+color: #444; font-family: 'Pretendard-Regular';}
+.section_story .p2 a{padding: 20px 30px; border: 1px solid #333; letter-spacing: 10px; font-family: 'M PLUS 1', sans-serif; color: #333;}
+.section_story .p2 a:hover{background-color: rgb(128, 128, 128); color: white; border: none;}
+.rightbox{display: flex; justify-content: flex-end; width: 50%; height: 500px; padding-top: 30px;}
+.box_shadow_0{width: 400px; height: 400px; position: relative; 
+background-color: rgba(0, 0, 0, 0.2); }
+.story_img{width: 100%; height: 400px; background-image: url("../img/img_nexus_detail_9.jpg"); 
+background-position: center; background-size: cover; 
+position: absolute; top:25px; left: 25px;}   
+
+.section_products{display:flex; flex-flow: row wrap; justify-content: space-between; 
+width: 1100px; height: auto; margin: 0 auto; background-color: white;}
+#products_01{width: 48%; height: 600px; margin-bottom: 20px;}
+#products_01 .p_photo{width: 100%; height: 500px; overflow: hidden; }
+#products_01 .p_photo img{width: 100%; }
+#products_01 .p_photo .p_img:hover{opacity: 0.6;}
+.textbox_pro{width: 400px; height: 150px; position: relative; bottom: 50px; left: 20px; 
+        background-color: rgba(94, 94, 94, 0.3); z-index: 1;}
+.textbox_pro h2{ position: absolute; z-index: 3;}
+.boxshadow_1{width: 400px; height: 150px; position: absolute; left: -20px; bottom: 20px; 
+background-color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center;}
+.boxshadow_1 h2{font-size: 14px; font-family: 'M PLUS 1', sans-serif;}
+#products_01 .p_photo .p_logo{position: relative; left: 0px; bottom: 380px;  }
+
+
+.section_event{width: 100%; height: 700px; margin: 0 auto; 
+background-position: center; background-size: cover;}
+.section_event .event_go{width: 1100px; height: 300px; margin: 0 auto; position: relative;}
+
+.section_event .event_go .textbox_2{width: 50%; height: 300px; padding: 20px 0;
+                background-color: white; position: absolute; top: 600px; left: 300px;
+                display: flex; flex-direction: column; justify-content: space-evenly;
+                align-items: center;}
+.section_event .p11{font-size: 25px; 
+color: #444; font-family: 'Pretendard-Regular'; }
+.section_event .p22 a{padding: 20px 30px; border: 1px solid #333;
+letter-spacing: 10px; font-family: 'M PLUS 1', sans-serif; color: #333;}
+.section_event .p22 a:hover{background-color: rgb(128, 128, 128); color: white; border: none;}
+
+
+.nexus_brand{width: 1100px; height: 700px; margin: 0 auto;}
+.nexus_brand h2{font-size: 20px; font-family: 'Pretendard-Regular'; }
+.nexus_brand .brand_box{width: 100%; height: 600px; 
+display: flex; flex-flow: row wrap; justify-content: space-between; align-content: flex-end;}
+.nexus_brand img{background-color: rgba(17, 25, 104, 0.767); border: 1px dotted white; box-sizing: border-box;}
+.nexus_brand img:hover{filter:brightness(60%);}
+
+footer{width: 100%; height: 300px; background-color: rgb(51, 51, 51); margin: 0 auto;
+        display: flex; flex-direction: column; }
+footer #footer_box{width: 1100px; display: flex; justify-content: space-between; margin: 0 auto; }
+footer .f_bottom{display: flex; flex-flow: column wrap; justify-content: space-around;
+        width: 300px; height: 230px; padding-left: 50px; }
+footer .f_logo {background-image: url("../img/img-nexus-logo.png"); background-position: center; background-size: cover; 
+width: 100px; height: 30px; }
+footer p{font-family: 'Pretendard-Regular'; color:white; font-size: 12px;}
+
+#footer_box .f_right{width: 800px; height: 230px; display: flex; flex-direction: row;
+                        justify-content: space-around; padding-top: 80px;}
+footer .line{width: 100%; height: 10px; border-top: 1px solid #666; }               
+footer .f_bottom_2{display: flex; align-items: center; justify-content: space-between;
+width: 1100px; height: 70px; margin: 0 auto;}
+footer .f_bottom_2 p{line-height: 70px; padding-left: 50px;}
+footer .f_bottom_2 a{text-decoration: none; color: white; padding-right: 50px;
+font-family: 'Pretendard-Regular'; font-size: 12px; }
+
+}
