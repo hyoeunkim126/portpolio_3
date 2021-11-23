@@ -5,14 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;500;600&display=swap" rel="stylesheet">
     <title>넥서스:NEXUS-Official/</title>
-    
+    <style>
+       .p01 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p02 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p03 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p04 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p05 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p06 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+
+
+
+
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        var w=window.innerWidth;
+        function prev(){
+          $('.slide li:last').prependTo('.slide');
+          $('.slide').css({marginLeft:-w}); 
+          $('.slide').stop().animate({marginLeft:0},1000);
+        }
+
+        function next(){
+          $('.slide').stop().animate({marginLeft:-w},1000, function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0});
+          });
+        }
+
+        function slide(){
+          $('.slide').stop().animate({marginLeft:-w},1000, function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0});
+          });
+        }
+
+        setInterval(slide, 3000);
+
+        $('.prev').click(function(){
+        prev();
+        });
+
+        $('.next').click(function(){
+        next();
+        });
+
+
+        $(function(){
+            $(window).scroll(function(){
+                var ws=$(this).scrollTop();
+                // 아래쪽에서
+                if(ws>400){
+                    $('.p01').css("transform","translateY(0px)").css("opacity","1");
+                }
+                
+                if(ws>500){
+                    $('.p02').css("transform","translateY(0px)").css("opacity","1");
+                }
+                
+                if(ws>800){
+                    $('.p03').css("transform","translateY(0px)").css("opacity","1");
+                }
+                
+                if(ws>1000){
+                    $('.p04').css("transform","translateY(0px)").css("opacity","1");
+                }
+                
+                if(ws>1500){
+                    $('.p05').css("transform","translateY(0px)").css("opacity","1");
+                }
+               
+                if(ws>1700){
+                    $('.p06').css("transform","translateY(0px)").css("opacity","1");
+                }
+
+            });
+        });
+  
+
+    </script>
 </head>
 <body>
     <div id="wrap">
         <header>
+            <div class="small">
+                
+            </div>
             <div class="container">
                <a href="#"><div class="logo"></div></a>
                <nav>
@@ -26,7 +108,15 @@
                </nav>
             </div>
         </header>
-        <div id="slider"></div>  <!--이미지 상단  -->
+        <div id="slidewrap">
+            <ul class="slide">
+                <li><img src="img/img_banner.jpg" alt="slideimg"></li>
+                <li><img src="img/slide_img2.jpg" alt="slideimg"></li>
+                <li><img src="img/slide_img3.jpg" alt="slideimg"></li>
+            </ul>
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>  
         <div class="section_story">
             <div class="textbox">
                 <h3>OUR STORY</h3>
@@ -44,7 +134,7 @@
             
         </div>
         <div class="section_products">
-            <div class="products_01">
+            <div id="products_01" class="p01">
                 <div class="p_photo"><a href="#">
                     <img src="img/img_kitchen.jpg" alt="img" class="p_img">
                     <img width="350" height="180" src="img/img_main_logo_dada.svg" alt="img" class="p_logo">    
@@ -56,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="products_01">
+            <div id="products_01" class="p02">
                 <div class="p_photo"><a href="#">
                     <img src="img/img-bathroom-2-x@2x.jpg" alt="img" class="p_img" > 
                     <img width="350" height="180" src="img/img_main_logo_gessi.svg" alt="img" class="p_logo">   
@@ -68,7 +158,7 @@
                 </div>
             </div>
             
-            <div class="products_01">
+            <div id="products_01" class="p03">
                 <div class="p_photo"><a href="#">
                     <img src="img/img_livingroom-1.jpg" alt="img" class="p_img"> 
                     <img width="350" height="180" src="img/img_main_logo_molteni.svg" alt="img" class="p_logo">   
@@ -80,7 +170,7 @@
                 </div>
             </div>
             
-            <div class="products_01">
+            <div id="products_01" class="p04">
                 <div class="p_photo"><a href="#">
                     <img src="img/img_outdoor.jpg" alt="img" class="p_img">
                     <img width="350" height="180" src="img/img_main_logo_kettal.svg" alt="img" class="p_logo">
@@ -92,7 +182,7 @@
                 </div>
             </div>
             
-            <div class="products_01">
+            <div id="products_01" class="p05">
                 <div class="p_photo"><a href="#">
                     <img src="img/img_lighting.jpg" alt="img" class="p_img">
                     <img width="350" height="180"  src="img/img_main_logo_fontana.svg" alt="img" class="p_logo">    
@@ -104,7 +194,7 @@
                 </div>
             </div>
             
-            <div class="products_01">
+            <div id="products_01" class="p06">
                 <div class="p_photo"><a href="#">
                     <img src="img/img_tile.jpg" alt="img" class="p_img">
                     <img width="350" height="180" src="img/img_main_logo_porcelanosa.svg" alt="img" class="p_logo">     
@@ -181,7 +271,7 @@
                         +82 2-543-5093</p>
                 </div>
             </div>
-
+            <div class="line"></div>
             <div class="f_bottom_2">
                 <p>ⓒ HANSSEM NEXUS 2020. All rights reserved</p>
                 <a href="#">개인정보취급방침</a>
