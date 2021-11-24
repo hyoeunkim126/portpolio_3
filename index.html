@@ -10,12 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;500;600&display=swap" rel="stylesheet">
     <title>넥서스:NEXUS-Official/</title>
     <style>
-       .p01 {transform: translateY(150px); transition: all 1s; opacity: 0;}
-       .p02 {transform: translateY(150px); transition: all 1s; opacity: 0;}
-       .p03 {transform: translateY(150px); transition: all 1s; opacity: 0;}
-       .p04 {transform: translateY(150px); transition: all 1s; opacity: 0;}
-       .p05 {transform: translateY(150px); transition: all 1s; opacity: 0;}
-       .p06 {transform: translateY(150px); transition: all 1s; opacity: 0;}
+       .p01,.p02,.p03,.p04,.p05,.p06 {transform: translateY(200px); transition: all 2s; opacity: 0;}
+       
 
 
 
@@ -55,6 +51,8 @@
         });
 
 
+        
+
         $(function(){
             $(window).scroll(function(){
                 var ws=$(this).scrollTop();
@@ -88,25 +86,38 @@
   
 
     </script>
+    <script>
+        $(function(){
+            $(".mini_nav").click(function(){
+                $(".nav_s").slideToggle();
+            });
+        });
+
+        $(window).resize(function(){
+            if(window.innerWidth>=768){
+                $('.nav_s').show();
+            }
+        };)
+
+    </script>
 </head>
 <body>
     <div id="wrap">
         <header>
-            <div class="small">
-                
-            </div>
             <div class="container">
-               <a href="#"><div class="logo"></div></a>
-               <nav>
-                   <ul>
-                       <li><a href="#">NEXUS</a></li>
-                       <li><a href="#">BRANDS</a></li>
-                       <li><a href="#">PRODUCTS</a></li>                       
-                       <li><a href="#">NEWS&EVENT</a></li>
-                       
-                   </ul>
-               </nav>
+               <a href="#"><img src="img/img-nexus-logo.png" class="nexus_logo"></a>
+               <img src="img/i.png" alt="icon" class="mini_nav">
+               
             </div>
+            <nav class="nav_s">
+                <ul>
+                    <li><a href="#">NEXUS</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="#">PRODUCTS</a></li>                       
+                    <li><a href="#">NEWS&EVENT</a></li>
+                    
+                </ul>
+            </nav>
         </header>
         <div id="slidewrap">
             <ul class="slide">
