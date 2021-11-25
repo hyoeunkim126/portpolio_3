@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.slidewrap_fontana{width: 100%; height: 450px; 
+    background-image: url("../img/fontanaArt_slide.jpg"); 
+    background-position: center;
+    background-size: cover;}
+
+.fontana_section1{width: 100%; height: 300px; background-color: bisque;}
