@@ -1,17 +1,73 @@
 @charset "UTF-8";
 
 #sub_wrap{width: 100%; height: auto;}
-.slidewrap_fontana{width: 100%; height: 600px; 
+.slidewrap_fontana{width: 100%; height: 700px; 
     background: url("../img/fontanaArt_slide.jpg")fixed; 
-    background-position: center;
-    background-size: cover; }
+    background-position: center; background-size: cover; filter: brightness(0.7);}
+.fontana_title{position: relative;}
+.fontana_title .box{width: 400px; height: 300px; 
+    background-color: rgba(247, 247, 247, 0.3); position: absolute; top:50%; left: 50%;
+    margin-top: -150px; margin-left: -200px;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.fontana_title h1{font-family: 'Times New Roman', Times, serif;
+text-align: center; font-size: 50px; color: white;}
+.fontana_title p{font-family: 'Times New Roman', Times, serif;
+font-size: 22px;}
+.fontana_title a{padding: 10px 30px; margin-top: 20px; border: 1px solid #333;
+    letter-spacing: 5px; font-family: 'M PLUS 1', sans-serif;
+     color: #333; font-size: 1vw; box-sizing: border-box;}
+.fontana_title a:hover{background-color: rgb(128, 128, 128); 
+    color: white; border: none; }
 
-.fontana_section1{width: 1100px; height: 400px; background-color: bisque; margin: 0 auto;}
+
+.fontana_section1{width: 1100px; height: 400px; background-color: rgb(255, 248, 240); 
+    margin: 0 auto; display: flex; align-items: center;}
+.left_text{width: 50%; height: 300px; display: flex; flex-direction: column; }
+.small_heading{color:orange; text-transform: uppercase;
+    font-family: "Poppins", sans-serif; letter-spacing: 5px;
+    }
+.left_text h3{letter-spacing: 5px; padding-bottom: 50px;}
+
+.right_text{width: 50%; height: 300px;}
+.right_text p{font-family: 'M PLUS 1', sans-serif; font-size: 14px;
+              line-height: 30px; color: #666; text-align: justify;}
+
 .fontana_section2{width: 1100px; height: 600px;  margin: 0 auto; 
-                  display: flex; flex-direction: row; border:1px solid tomato;}
-.text_2{width: 50%; height: 600px;}
-.text_2 p{text-align: center; font-size: 40px; font-family: 'Times New Roman', Times, serif;}
+                  display: flex; flex-direction: row; align-items: center; }
+.text_2{width: 50%; height: 300px; position: relative;}
+.text_2_box{display: flex; align-items: center;
+    position: absolute; z-index: 5; background-color: rgb(255, 223, 163); }
+.text_2_box p{text-align: center; font-size: 35px; line-height: 50px;
+    font-family: 'Times New Roman', Times, serif; }
 .img_2{width: 50%; height: 600px; background:url("../img/img_branddetail_fontana_1@2x.jpg"); 
-    background-position: right; background-repeat: no-repeat; background-size: contain; background-attachment: fixed;  }
-.fontana_section3{width: 1100px; height: 400px; background-color: grey; margin: 0 auto;}
-.fontana_section4{width: 1100px; height: 400px; background-color: salmon; margin: 0 auto;}
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+     ; z-index: 0;}
+
+.fontana_section3{width: 1100px; height: 600px; margin: 0 auto;
+                  display: flex; flex-direction: row;}
+.fontana_section3 .img_3_1{width: 50%; height: 600px; background: url("../img/img_branddetail_fontana_2@2x.jpg");
+    background-position: center; background-size: cover;}
+.img_3_2{width: 50%; height: 600px; background: url("../img/img_branddetail_fontana_3@2x.jpg");
+        background-position: center; background-size: cover;}
+
+.fontana_section4{width: 1100px; height: auto; margin: 0 auto;}
+
+.fontana_section5{width: 1100px; height: 250px; margin: 0 auto;}
+
+.fontana_section5 p{padding-left:50%; font-size: 35px; line-height: 50px;
+    font-family: 'Times New Roman', Times, serif; }
+
+.fontana_section6{width: 1100px; height: 600px; margin: 0 auto; display: flex;}
+.img_6{width: 50%; height: 600px; border: 1px solid orange;
+    background: url("../img/img_branddetail_fontana_4@2x.jpg");
+    background-position: center; background-size: cover;}
+
+.fontana_section7{width: 1100px; height: auto; margin: 0 auto;
+display: flex;}
+
+.img_7{width: 50%; height: 600px; border: 1px solid orange;
+    background: url("../img/img_branddetail_fontana_5.jpg");
+    background-position: center; background-size: cover;}
+.img_7_2{width: 50%; height: 600px; border: 1px solid orange;
+    background: url("../img/img_branddetail_fontana_6.jpg");
+    background-position: center; background-size: cover;}
