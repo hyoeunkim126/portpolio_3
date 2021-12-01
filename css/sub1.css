@@ -90,7 +90,7 @@ font-size: 22px;}
     .fontana_section9{width: 100%; height: 800px; margin: 0 auto;}
     .img_9{width: 100%; height: 400px; 
         background: url("../img/img-branddetail-fontana-8.jpg");
-        background-position: left; background-size: cover;
+        background-position-x: -80px; background-size: cover;
         position: relative;}
     .text_9_box{width: 52%; height: auto;
     position: absolute; top:40%; left: 5%;}
