@@ -66,9 +66,9 @@ font-size: 22px;}
         .fontana_section6{width: 100%; height: 400px; margin: 0 auto; display: flex;}
         .fontana_section6 .right_text{margin-left: 50%;}
         
-        .fontana_section7{width: 100%; height: 900px; margin: 0 auto;
-        display: flex; justify-content: space-between;}
-        .imgbox_7{width: 43%; height: 800px; }
+        .fontana_section7{width: 100%; height: 900px; 
+        display: flex; justify-content: center ; border: solid 1px tomato; }
+        .imgbox_7{width: 45%; height: 800px; }
         .img_7{width: 100%; height: 700px; 
             background: url("../img/img_branddetail_fontana_5.jpg");
             background-position: center; background-size: cover;}
