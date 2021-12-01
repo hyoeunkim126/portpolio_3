@@ -66,12 +66,13 @@ $(function(){
 
 $(function(){
     $(".mini_nav").click(function(){
-        $(".nav_s").slideToggle();
+        $(".nav_s1").slideToggle();
     });
 });
 
 $(window).resize(function(){
     if(window.innerWidth>=599){
         $('.nav_s').show();
+        $('.nav_s1').hide();
     }
 });
