@@ -27,7 +27,7 @@
         color: #444; font-family: 'Pretendard-Regular';}
         .section_story .p2 a{padding: 20px 30px; border: 1px solid #333;
                  letter-spacing: 5px; font-family: 'M PLUS 1', sans-serif;
-                  color: #333; font-size: 1vw;}
+                  color: #333; font-size: 0.8rem;}
         .section_story .p2 a:hover{background-color: rgb(128, 128, 128); color: white; border: none;}
         .rightbox{display: flex; justify-content: flex-start; width: 90%; height: 500px; padding-top: 30px;}
         .box_shadow_0{width: 400px; height: 400px; position: relative; 
@@ -59,9 +59,9 @@
                         background-color: white; position: absolute; top: 200px; left: 15%;
                         display: flex; flex-direction: column; justify-content: space-evenly;
                         align-items: center; box-shadow: 7px 7px 1px 0px rgba(102, 102, 102, 0.5);}
-        .section_event .p11{font-size: 25px; 
+        .section_event .p11{font-size: 1.3em; 
         color: #444; font-family: 'Pretendard-Regular'; }
-        .section_event .p22 a{padding: 20px 30px; border: 1px solid #333; font-size: 1vw;
+        .section_event .p22 a{padding: 20px 30px; border: 1px solid #333; font-size: 0.8rem;
         letter-spacing: 5px; font-family: 'M PLUS 1', sans-serif; color: #333;}
         .section_event .p22 a:hover{background-color: rgb(128, 128, 128); color: white; border: none;}
         
