@@ -71,7 +71,7 @@ $(function(){
 });
 
 $(window).resize(function(){
-    if(window.innerWidth>=599){
+    if(window.innerWidth>=599.9){
         $('.nav_s').show();
         $('.nav_s1').hide();
     }
