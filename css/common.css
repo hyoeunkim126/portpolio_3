@@ -13,8 +13,8 @@
 
 #wrap{width: 100%; height: auto; margin: 0 auto; }
 header {width: 100%; height: 80px; background-color: rgba(255, 255, 255, 0.808); 
-    margin: 0 auto; position: absolute; z-index: 3;}
-header .container{padding-top: 20px;}
+    margin: 0 auto; position: absolute; z-index: 3; }
+header .container{padding: 20px 20px 10px 20px;}
 @media (max-width:599.9px) {
     header .container{display: flex; justify-content: space-between; 
             align-items: center; width: 100%; }
@@ -22,20 +22,20 @@ header .container{padding-top: 20px;}
     .nav_s{display: none;}
     .nav_s1{display: none;}
     
-    .container .nexus_logo{width:150px; height: auto; }
-    header nav ul{background-color: rgba(255, 255, 255); margin-top: 10px;}
-    header nav ul li{color: rgb(61, 61, 61); display: block;
-             padding:20px; font-family: 'M PLUS 1', sans-serif; text-align: right;}
-    header nav ul li a{color: #666;}
-    header nav ul li a:hover{border-bottom:2px solid #666 ;}
+    .container .nexus_logo{width:150px; height: auto;  }
+    header nav ul{background-color: rgba(255, 255, 255); }
+    header nav ul li{color: rgb(61, 61, 61); display: block; border-top: 0.5px dotted rgb(209, 209, 209);
+             padding:30px; font-family: 'M PLUS 1', sans-serif; text-align: right;}
+    header nav ul li a{color: #666; font-size: 20px;}
+    header nav ul li a:hover{border-bottom:3px solid #666 ;}
     
 
 
     footer{width: 100%; height: 300px; background-color: rgb(51, 51, 51); margin: 0 auto;
         display: flex; flex-direction: column; }
-    footer #footer_box{width: 100%; display: flex; justify-content: space-between; margin: 0 auto; }
+    footer #footer_box{width: 90%; display: flex; justify-content: space-between; margin: 0 auto; }
     footer .f_bottom{display: flex; flex-flow: column wrap; justify-content: space-around;
-            width: 300px; height: 230px; padding-left: 50px; }
+            width: 300px; height: 230px;  }
     footer .f_logo {background-image: url("../img/img-nexus-logo.png"); background-position: center; background-size: cover; 
     width: 100px; height: 30px; }
     footer p{font-family: 'Pretendard-Regular'; color:white; font-size: 12px;}
@@ -44,15 +44,15 @@ header .container{padding-top: 20px;}
                             justify-content: space-around; padding-top: 60px;}
     footer .line{width: 100%; height: 10px; border-top: 1px solid #666; }               
     footer .f_bottom_2{display: flex; align-items: center; justify-content: space-between;
-    width: 100%; height: 70px; margin: 0 auto;}
-    footer .f_bottom_2 p{line-height: 70px; padding-left: 50px;}
-    footer .f_bottom_2 a{text-decoration: none; color: white; padding-right: 50px;
+    width: 90%; height: 70px; margin: 0 auto; }
+    footer .f_bottom_2 p{line-height: 70px; }
+    footer .f_bottom_2 a{text-decoration: none; color: white; padding-right: 20px;
     font-family: 'Pretendard-Regular'; font-size: 12px; } 
 
 }
 
 
-@media (min-width:600px) and (max-width:1099px) {
+@media (min-width:600px) and (max-width:1099.9px) {
     .nav_s{display: block;}
     .nav_s1{display: none;}
     .mini_nav{display: none;}
@@ -65,7 +65,7 @@ header .container{padding-top: 20px;}
 
     footer{width: 100%; height: 300px; background-color: rgb(51, 51, 51); margin: 0 auto;
         display: flex; flex-direction: column; }
-    footer #footer_box{width: 100%; display: flex; justify-content: space-between; margin: 0 auto; }
+    footer #footer_box{width: 90%; display: flex; padding: 0 10px;  justify-content: space-between; margin: 0 auto; }
     footer .f_bottom{display: flex; flex-flow: column wrap; justify-content: space-around;
             width: 300px; height: 230px;  }
     footer .f_logo {background-image: url("../img/img-nexus-logo.png"); background-position: center; background-size: cover; 
@@ -76,7 +76,7 @@ header .container{padding-top: 20px;}
                             justify-content: space-around; padding-top: 60px;}
     footer .line{width: 100%; height: 10px; border-top: 1px solid #666; }               
     footer .f_bottom_2{display: flex; align-items: center; justify-content: space-between;
-    width: 100%; height: 70px; margin: 0 auto;}
+    width: 90%; height: 70px; margin: 0 auto;}
     footer .f_bottom_2 p{line-height: 70px; }
     footer .f_bottom_2 a{text-decoration: none; color: white; padding-right: 50px;
     font-family: 'Pretendard-Regular'; font-size: 12px; }
@@ -96,17 +96,17 @@ header .container{padding-top: 20px;}
         display: flex; flex-direction: column; }
     footer #footer_box{width: 1100px; display: flex; justify-content: space-between; margin: 0 auto; }
     footer .f_bottom{display: flex; flex-flow: column wrap; justify-content: space-around;
-            width: 300px; height: 230px;  }
+            width: 300px; height: 230px; padding: 10px; }
     footer .f_logo {background-image: url("../img/img-nexus-logo.png"); background-position: center; background-size: cover; 
     width: 100px; height: 30px; }
     footer p{font-family: 'Pretendard-Regular'; color:white; font-size: 12px;}
 
     #footer_box .f_right{width: 800px; height: 230px; display: flex; flex-direction: row;
-                            justify-content: space-around; padding-top: 80px;}
+                            justify-content: space-around; padding: 80px 0 0 10px;}
     footer .line{width: 100%; height: 10px; border-top: 1px solid #666; }               
     footer .f_bottom_2{display: flex; align-items: center; justify-content: space-between;
     width: 1100px; height: 70px; margin: 0 auto;}
-    footer .f_bottom_2 p{line-height: 70px; }
+    footer .f_bottom_2 p{line-height: 70px; padding: 10px;}
     footer .f_bottom_2 a{text-decoration: none; color: white; padding-right: 50px;
     font-family: 'Pretendard-Regular'; font-size: 12px; }   
 
