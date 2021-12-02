@@ -30,7 +30,7 @@ font-size: 22px;}
     .left_text h3 {letter-spacing: 2px; font-family: 'M PLUS 1p', sans-serif; 
                     padding-bottom: 30px; }
     
-    .right_text {width: 90%; height: auto; display: flex;
+    .right_text {width: 90%; height: 300px; display: flex;
     flex-direction: column; margin: 0 auto;}
     .right_text p {font-family: 'M PLUS 1', sans-serif; font-size: 15px;
                     line-height: 30px; color: #666; text-align: justify;
@@ -38,7 +38,7 @@ font-size: 22px;}
     
     .fontana_section2 {width: 100%; height: 880px; margin: 0 auto; 
                         position: relative;}
-    .img_2 {width: 100%; height: 620px; background:url("../img/img_branddetail_fontana_1@2x.jpg"); 
+    .img_2 {width: 100%; height: 690px; background:url("../img/img_branddetail_fontana_1@2x.jpg"); 
         background-position: center; background-repeat: no-repeat; background-size: cover; 
             ;  z-index: 1; }
     
